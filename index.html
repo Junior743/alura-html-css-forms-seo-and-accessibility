@@ -28,7 +28,7 @@
     </header>
     <section></section>
 
-    <form action="" method="get">
+    <form action="/sucesso.html" method="get">
       <fieldset>
         <legend>Dados Pessoais</legend>
 
@@ -54,12 +54,17 @@
           name="phone"
           pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
           placeholder="XX-XXXXX-XXXX"
+          aria-describedby="phoneHelp"
           required
         />
+        <small id="phoneHelp"
+          >Preencha com 11 dígitos no formato: DDD-XXXXX-XXXX</small
+        >
         <br />
 
         <label for="photo">Upload de foto:</label>
         <input type="file" name="photo" accept="image/*" />
+        <small>Envie uma foto no formato PNG ou JPEG</small>
       </fieldset>
 
       <fieldset>
@@ -249,8 +254,10 @@
         >
       </fieldset>
 
-      <button type="submit">Enviar</button>
-      <button type="reset">Limpar todo o formulário</button>
+      <button type="submit" aria-label="Enviar dados do formulário">
+        Enviar
+      </button>
+      <button type="reset" aria-label="Limpar todo o formulário">Limpar</button>
     </form>
   </body>
 </html>

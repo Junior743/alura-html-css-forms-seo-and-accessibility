@@ -5,3 +5,7 @@ body {
 h1 {
   font-family: "Fjalla One", sans-serif;
 }
+
+small {
+  visibility: hidden;
+}
