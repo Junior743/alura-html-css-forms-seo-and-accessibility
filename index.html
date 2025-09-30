@@ -41,8 +41,6 @@
       <input type="file" name="photo" accept="image/*" />
     </fieldset>
 
-    <br />
-
     <fieldset>
       <legend>Perfil</legend>
 
@@ -100,7 +98,6 @@
 
       <label for="city">Cidade:</label>
       <input type="text" id="city" name="city" autocomplete="address-level2" placeholder="Ex.: Fortaleza" />
-
     </fieldset>
 
     <fieldset>
@@ -130,6 +127,26 @@
 
       <label for="favoriteColor">Cor Favorita:</label>
       <input type="color" name="favoriteColor" id="favoriteColor">
+    </fieldset>
+
+    <fieldset>
+      <legend>Opinião:</legend>
+
+      <span>Nível de satisfação com o serviço:</span>
+      <input type="radio" name="satisfaction" id="satisfaction-very-satisfied" value="very-satisfied">
+      <label for="satisfaction-very-satisfied">Muito Satisfeito</label>
+      <input type="radio" name="satisfaction" id="satisfaction-satisfied" value="satisfied">
+      <label for="satisfaction-satisfied">Satisfeito</label>
+      <input type="radio" name="satisfaction" id="satisfaction-neutral" value="neutral">
+      <label for="satisfaction-neutral">Neutro</label>
+      <input type="radio" name="satisfaction" id="satisfaction-dissatisfied" value="dissatisfied">
+      <label for="satisfaction-dissatisfied">Insatisfeito</label>
+      <input type="radio" name="satisfaction" id="satisfaction-very-dissatisfied" value="very-dissatisfied">
+      <label for="satisfaction-very-dissatisfied">Muito Insatisfeito</label>
+      <br />
+
+      <span>Comentários:</span>
+      <textarea name="comments" id="comments" placeholder="Deixe seus comentários aqui..."></textarea>
     </fieldset>
 
     <button type="submit">Enviar</button>
